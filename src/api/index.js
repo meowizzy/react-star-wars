@@ -1,8 +1,23 @@
 export const API = {
-    root: 'https://swapi.dev/api/',
+    // common
+    http: 'http://',
+    https: 'https://',
+
+    // swapi
+    root: 'swapi.dev/api/',
     persons: 'people',
 
-    getPersonsApi() {
-        return this.root + this.persons;
+    // visualguide
+    imgRoot: 'https://starwars-visualguide.com/assets/img/',
+    imgCategory: 'characters',
+    imgExt: '.jpg',
+
+    // methods
+    getPersonsPath() {
+        return this.https + this.root + this.persons;
+    },
+
+    getPersonImg() {
+        return this.imgRoot + this.imgCategory;
     }
 };
