@@ -1,2 +1,2 @@
-import { Persons } from "./Persons";
-export default Persons;
+import { PersonsPage } from "./PersonsPage";
+export default PersonsPage;

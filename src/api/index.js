@@ -7,6 +7,9 @@ export const API = {
     root: 'swapi.dev/api/',
     persons: 'people',
 
+    // query
+    pages: '/?page=',
+
     // visualguide
     imgRoot: 'https://starwars-visualguide.com/assets/img/',
     imgCategory: 'characters',
@@ -14,7 +17,7 @@ export const API = {
 
     // methods
     getPersonsPath() {
-        return this.https + this.root + this.persons;
+        return this.https + this.root + this.persons + this.pages;
     },
 
     getPersonImg() {

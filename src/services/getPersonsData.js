@@ -1,4 +1,4 @@
-import { API } from "../api";
+import { API } from "@api";
 
 const getId = (url, category) => {
     const protocol = url.includes(API.http) ? API.http : API.https;

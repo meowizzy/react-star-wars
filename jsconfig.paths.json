@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+          "@api/*": ["./src/api"],
+          "@containers/*": ["./src/containers"],
+          "@hoc-helpers/*": ["./src/hoc-helpers"],
+          "@services/*": ["./src/services"],
+          "@styles/*": ["./src/styles"],
+          "@utils/*": ["./src/utils"],
+          "@components/*": ["./src/components"],
+          "@routes/*": ["./src/routes"],
+          "@hooks/*": ["./src/hooks"],
+          "@layouts/*": ["./src/layouts"]
+    }
+  }
+}

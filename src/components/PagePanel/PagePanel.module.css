@@ -1,0 +1,18 @@
+.container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: var(--spacing-small);
+}
+
+.loading {
+     opacity: .5;
+     pointer-events: none;
+}
+
+.controls {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     column-gap: var(--spacing-small);
+}

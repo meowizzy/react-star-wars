@@ -1,0 +1,27 @@
+.container {
+     display: flex;
+     align-items: center;
+     column-gap: var(--spacing-light);
+     row-gap: var(--spacing-light);
+     flex-wrap: wrap;
+}
+
+.container_item {
+     text-align: center;
+}
+
+.container_item a {
+     display: inline-block;
+     min-width: 28px;
+     line-height: 24px;
+     border-radius: var(--radius-small);
+     color: var(--color-white);
+     font-size: 16px;
+     text-decoration: none;
+     border: 1px solid var(--theme-default);
+     transition: var(--transition) ease;
+}
+
+.container_item a:hover, .container_item :global(a.active)  {
+     background-color: var(--theme-default);
+}

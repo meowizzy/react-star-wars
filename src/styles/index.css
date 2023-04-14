@@ -1,8 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+:root {
+    --color-black: rgb(0,0,0);
+    --color-white: rgb(255,255,255);
+    --color-dark-gray: rgb(61, 61, 61);
+
+    --spacing-light: 10px;
+    --spacing-small: 15px;
+    --spacing-large: 35px;
+    --spacing-medium: 30px;
+
+    --radius-small: 3px;
+
+    --transition: .3s;
+
+    --font: Nunito,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    --text-shadow-blue: 0 0 3px var(--color-white), 0 0 50px var(--theme-default);
+
+    --theme-default: rgb(69, 212, 255);
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 body {
-    font-family: sans-serif;
+    background-color: var(--color-black);
+    font-family: var(--font);
+    color: var(--color-white);
 }

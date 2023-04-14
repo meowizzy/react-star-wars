@@ -1,0 +1,30 @@
+.menu {
+
+}
+
+.menu_list {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+}
+
+.menu_item a {
+     font-size: 16px;
+     color: var(--color-white);
+     text-decoration: none;
+     padding: 10px 15px;
+     display: inline-block;
+     border-radius: var(--radius-small);
+     transition: var(--transition);
+     border: 1px solid transparent;
+}
+
+.menu_item a:hover, .menu_item :global(a.active) {
+     color: var(--theme-default);
+     border: 1px solid var(--theme-default);
+     text-shadow: var(--text-shadow-blue);
+}
+
+.menu_item {
+     margin: 0 10px 0 0;
+}
