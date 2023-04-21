@@ -3,23 +3,3 @@
      align-items: center;
      column-gap: var(--spacing-small);
 }
-
-.page_control {
-     text-decoration: none;
-     display: inline-block;
-     padding: 10px 15px;
-     border-radius: var(--radius-small);
-     border: 1px solid var(--color-white);
-     color: var(--color-white);
-     transition: var(--transition);
-}
-
-.page_control:hover {
-     color: var(--theme-default);
-     border: 1px solid var(--theme-default);
-}
-
-.disabled {
-     opacity: .7;
-     pointer-events: none;
-}

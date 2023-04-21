@@ -1,0 +1,20 @@
+.params {
+     font-size: 18px;
+}
+
+.params li {
+     display: flex;
+     align-items: center;
+     column-gap: 10px;
+     margin-bottom: 10px;
+}
+
+.params li:last-child {
+     margin-bottom: 0;
+}
+
+.params_title {
+     font-weight: 700;
+}
+
+.params_body {}

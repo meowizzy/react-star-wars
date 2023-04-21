@@ -1,3 +1,11 @@
+import { API } from "@api";
+
+
+export const changeProtocol = url => {
+    return url.includes(API.http) ? url.replace(API.http, API.https) : url;
+};
+
+
 export const getApiResource = async (uri) => {
     
     try {

@@ -6,13 +6,19 @@ export const API = {
     // swapi
     root: 'swapi.dev/api/',
     persons: 'people',
+    films: 'films',
+    species: 'species',
 
     // query
     pages: '/?page=',
 
     // visualguide
     imgRoot: 'https://starwars-visualguide.com/assets/img/',
-    imgCategory: 'characters',
+    imgCategories: {
+        personsImg: 'characters',
+        filmsImg: 'films',
+        speciesImg: 'species'
+    },
     imgExt: '.jpg',
 
     // methods
@@ -20,7 +26,22 @@ export const API = {
         return this.https + this.root + this.persons + this.pages;
     },
 
-    getPersonImg() {
-        return this.imgRoot + this.imgCategory;
+    getPersonPath() {
+        return this.https + this.root + this.persons;
+    },
+
+    getFilmPath() {
+        return this.https + this.root + this.films
+    },
+
+    getImgPath(category = this.imgCategories.personsImg) {
+        switch(category) {
+            case 'films':
+                return this.imgRoot + this.imgCategories.filmsImg;
+            case 'species':
+                return this.imgRoot + this.imgCategories.speciesImg;
+            default:
+                return this.imgRoot + category;   
+        }
     }
 };

@@ -10,7 +10,6 @@
 
 .menu_item a {
      font-size: 16px;
-     color: var(--color-white);
      text-decoration: none;
      padding: 10px 15px;
      display: inline-block;
@@ -22,9 +21,26 @@
 .menu_item a:hover, .menu_item :global(a.active) {
      color: var(--theme-default);
      border: 1px solid var(--theme-default);
-     text-shadow: var(--text-shadow-blue);
 }
 
 .menu_item {
      margin: 0 10px 0 0;
+}
+
+
+.dark .menu_item a {
+     color: var(--color-white);
+}
+
+.dark .menu_item a:hover, .dark .menu_item :global(a.active) {
+     text-shadow: var(--text-shadow-blue);
+}
+
+.light .menu_item a {
+     color: var(--color-dark);
+}
+
+.light .menu_item a:hover,
+.light .menu_item :global(a.active) {
+     text-shadow: var(--color-dark);
 }

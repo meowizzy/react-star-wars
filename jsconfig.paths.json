@@ -11,7 +11,8 @@
           "@components/*": ["./src/components"],
           "@routes/*": ["./src/routes"],
           "@hooks/*": ["./src/hooks"],
-          "@layouts/*": ["./src/layouts"]
+          "@layouts/*": ["./src/layouts"],
+          "@view/*": ["./src/view"]
     }
   }
 }

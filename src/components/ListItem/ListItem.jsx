@@ -1,13 +1,13 @@
-import React from "react";
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import styles from './PersonItem.module.css';
+import styles from './ListItem.module.css';
 
 
-export const PersonItem = ({ img, name, url }) => {
+export const PersonItem = ({ img, name, id, category = '/person/' }) => {
      return (
           <li className={styles.personItem}>
-               <a href="#">&nbsp;</a>
+               <Link to={`${category}${id}`} />
                <div className={styles.personItem__pic}>
                     <img src={img} alt={name} />
                </div>

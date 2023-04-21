@@ -2,14 +2,15 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import PersonsList from '@components/PersonsList';
+import List from '@components/List';
 import PagePanel from '@components/PagePanel';
 import { withErrorApi } from '@hoc-helpers/withErrorApi';
-//import styles from './Persons.module.css';
 
 import { API } from '@api';
 import { getApiResource } from '@utils/network';
 import { getPersonId, getPersonImg } from '@services/getPersonsData';
+
+//import styles from './Persons.module.css';
 
 
 const PersonsPage = ({ setErrorApi }) => {
@@ -56,7 +57,7 @@ const PersonsPage = ({ setErrorApi }) => {
                 }}
                 isLoading={isLoading}
             />
-            <PersonsList persons={!isLoading ? personsList : Array(10).fill(1)} />
+            <List data={!isLoading ? personsList : Array(10).fill(1)} />
         </>
     ); 
 };

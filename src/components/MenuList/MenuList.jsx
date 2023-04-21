@@ -1,15 +1,16 @@
 import { NavLink, useParams } from 'react-router-dom';
+import PropTypes from "prop-types";
+import cn from 'classnames';
 
 import styles from './MenuList.module.css';
 
 
-export const MenuList = () => {
-
+export const MenuList = ({ theme = 'dark' }) => {
      // костыль
      const param = useParams();
 
      return (
-          <nav className={styles.menu}>
+          <nav className={ cn(styles.menu, styles[theme])}>
                <ul className={styles.menu_list}>
                     <li className={styles.menu_item}>
                          <NavLink to="/" children="Home"/>
@@ -23,4 +24,9 @@ export const MenuList = () => {
                </ul>
           </nav>
      );
+};
+
+
+MenuList.propTypes = {
+     theme: PropTypes.string
 };

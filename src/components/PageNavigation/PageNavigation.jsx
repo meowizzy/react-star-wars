@@ -1,28 +1,22 @@
 import PropTypes from 'prop-types';
+import { UiButton } from '../UI';
 import cn from 'classnames';
-import { Link } from 'react-router-dom';
 
 import styles from './PageNavigation.module.css';
 
-export const PageNavigation = ({ currentPage, items, category = '/persons' }) => {
+export const PageNavigation = ({ classname, currentPage, items, category = '/persons', inList = true }) => {
      const pagesCount = Math.ceil(items / 10);    
      const prevPage = `${category}/${currentPage-1}`;
      const nextPage = `${category}/${currentPage+1}`;
 
      return (
-          <div className={styles.container}>
-               <Link to={prevPage} 
-                    className={cn(styles.page_control, 
-                         styles.prev_page, 
-                         currentPage === 1 && styles.disabled)}>
-                    Previous page
-               </Link>  
-               <Link to={nextPage} 
-                    className={cn(styles.page_control, 
-                         styles.next_page, 
-                         currentPage === pagesCount && styles.disabled)}>
+          <div className={cn(styles.container, classname)}>
+               <UiButton to={prevPage} disabled={currentPage === 1}>
+                    Prev page
+               </UiButton>   
+               <UiButton to={nextPage} disabled={currentPage === (inList ? pagesCount : items)}>
                     Next page
-               </Link>
+               </UiButton>               
           </div>
      );
 };
@@ -30,7 +24,9 @@ export const PageNavigation = ({ currentPage, items, category = '/persons' }) =>
 
 PageNavigation.propTypes = {
      currentPage: PropTypes.number,
-     pagesCount: PropTypes.number
+     pagesCount: PropTypes.number,
+     classname: PropTypes.string,
+     inList: PropTypes.bool
 };
 
 

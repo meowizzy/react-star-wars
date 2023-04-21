@@ -13,7 +13,7 @@ export const PagePanel = ({ heading, headingClass = '', pageControls = {}, isLoa
 
      return (
           <div className={classes}>
-               <Heading children={heading} clasName={headingClass}/>
+               { heading && <Heading children={heading} clasName={headingClass}/> }
                {
                     Object.keys(pageControls).length > 0 && 
                          <div className={styles.controls}>

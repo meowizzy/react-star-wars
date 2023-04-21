@@ -4,6 +4,7 @@
     --color-black: rgb(0,0,0);
     --color-white: rgb(255,255,255);
     --color-dark-gray: rgb(61, 61, 61);
+    --color-dark: rgb(34,34,34);
 
     --spacing-light: 10px;
     --spacing-small: 15px;
@@ -11,6 +12,8 @@
     --spacing-medium: 30px;
 
     --radius-small: 3px;
+    --radius-medium: 5px;
+    --radius-large: 10px;
 
     --transition: .3s;
 
