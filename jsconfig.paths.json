@@ -12,7 +12,8 @@
           "@routes/*": ["./src/routes"],
           "@hooks/*": ["./src/hooks"],
           "@layouts/*": ["./src/layouts"],
-          "@view/*": ["./src/view"]
+          "@view/*": ["./src/view"],
+          "@store/*": ["./src/store"]
     }
   }
 }
