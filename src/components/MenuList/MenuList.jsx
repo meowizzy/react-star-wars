@@ -19,6 +19,9 @@ export const MenuList = ({ theme = 'dark' }) => {
                          <NavLink to={`/persons/${param.page ? param.page : 1}`} children="Persons"/>
                     </li>
                     <li className={styles.menu_item}>
+                         <NavLink to="/favorites" children="Favorites"/>
+                    </li>
+                    <li className={styles.menu_item}>
                          <NavLink to="/not-found" children="Not Found"/>
                     </li>
                </ul>
