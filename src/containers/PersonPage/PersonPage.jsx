@@ -14,6 +14,7 @@ import styles from './PersonPage.module.css';
 
 const PersonPage = ({ setErrorApi }) => {
      const [personInfo, setPersonInfo] = useState(null);
+
      const match = useParams();
      
      useEffect(() => {
@@ -40,7 +41,7 @@ const PersonPage = ({ setErrorApi }) => {
                               { title: 'Gender', data: res.gender },
                          ]
                     };
-
+                    
                     setPersonInfo(info);
                     setErrorApi(false);
                } else {
