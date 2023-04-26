@@ -2,6 +2,7 @@ import HomePage from "@containers/HomePage";
 import PersonsPage from "@containers/PersonsPage/PersonsPage";
 import PersonPage from "@containers/PersonPage/PersonPage";
 import NotFountPage from "@containers/NotFoundPage";
+import FavoritesPage from "@containers/FavoritesPage";
 
 const routesConfig = [
      {
@@ -15,6 +16,10 @@ const routesConfig = [
      {
           path: 'person/:id',
           element: <PersonPage/>
+     },
+     {
+          path: 'favorites',
+          element: <FavoritesPage/>
      },
      {
           path: '*',
