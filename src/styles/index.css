@@ -3,8 +3,12 @@
 :root {
     --color-black: rgb(0,0,0);
     --color-white: rgb(255,255,255);
+    --color-light-gray2: rgb(191, 191, 191);
+    --color-light-gray: rgb(203, 203, 203);
     --color-dark-gray: rgb(61, 61, 61);
     --color-dark: rgb(34,34,34);
+    --color-blue: rgb(69, 212, 255);
+    --color-root-bg: var(--color-black);
 
     --spacing-light: 10px;
     --spacing-small: 15px;
@@ -24,7 +28,9 @@
 
     --text-shadow-blue: 0 0 3px var(--color-white), 0 0 50px var(--theme-default);
 
-    --theme-default: rgb(69, 212, 255);
+    --theme-default: var(--color-blue);
+    --theme-light: var(--color-dark);
+    --theme-light-bg: var(--color-light-gray2);
 }
 
 * {
@@ -38,7 +44,7 @@ ul, ol {
 }
 
 body {
-    background-color: var(--color-black);
+    background-color: var(--color-root-bg);
     font-family: var(--font);
     color: var(--color-white);
 }

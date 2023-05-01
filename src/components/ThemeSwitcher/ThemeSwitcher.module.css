@@ -1,0 +1,64 @@
+.Button {
+     background-color: transparent;
+     padding: 5px;
+     border-radius: 250px;
+     border: 2px solid var(--theme-default);
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     column-gap: 10px;
+     position: relative;
+     min-width: 40px;
+}
+
+.Button::before {
+     content: '';
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     top: 50%;
+     transform: translateY(-50%);
+     right: 3px;
+     background-color: var(--theme-default);
+     border-radius: 50%;
+     z-index: -1;
+     transition: var(--transition);
+}
+
+.Button.Active::before {
+     right: calc(100% - 23px);
+     background-color: var(--theme-light);
+}
+
+.Button.Active {
+     border: 2px solid var(--theme-light);
+}
+.Button.Active .light {
+     opacity: 1;
+}
+.Button.Active .dark {
+     opacity: 0;
+}
+
+.Button svg {
+     width: 15px;
+     height: 15px;
+     opacity: 0;
+     transition: var(--transition);
+}
+
+.Button svg path {
+     fill: var(--color-black);
+}
+
+.Button.Active svg path {
+     fill: var(--color-white);
+}
+
+.Button .light {
+
+}
+
+.Button .dark {
+     opacity: 1;
+}

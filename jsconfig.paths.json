@@ -13,7 +13,8 @@
           "@hooks/*": ["./src/hooks"],
           "@layouts/*": ["./src/layouts"],
           "@view/*": ["./src/view"],
-          "@store/*": ["./src/store"]
+          "@store/*": ["./src/store"],
+          "@context/*": ["./src/context"]
     }
   }
 }

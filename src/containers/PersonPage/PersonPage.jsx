@@ -10,7 +10,7 @@ import Related from '@components/Related';
 
 import Detailed from '@view/Detailed';
 
-import styles from './PersonPage.module.css';
+// import styles from './PersonPage.module.css';
 
 const PersonPage = ({ setErrorApi }) => {
      const [personInfo, setPersonInfo] = useState(null);

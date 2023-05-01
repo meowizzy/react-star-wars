@@ -6,7 +6,7 @@ import { getAnyId, getAnyImg } from '../../services/getPersonsData';
 import { Heading } from '../Heading/Heading';
 import List from '../List';
 
-import styles from './Related.module.css';
+// import styles from './Related.module.css';
 
 
 
@@ -44,7 +44,7 @@ export const Related = ({ title, data, category }) => {
                     <Heading>
                          { title }
                     </Heading>
-                    <List data={items || data} category={`/${category}/`}/>
+                    <List data={items || data} category={`/${category}/`} favBtn={false}/>
                </>
      );
 };

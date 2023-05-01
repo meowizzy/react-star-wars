@@ -8,6 +8,7 @@ export const API = {
     persons: 'people',
     films: 'films',
     species: 'species',
+    search: '/?search=',
 
     // query
     pages: '/?page=',
@@ -22,6 +23,11 @@ export const API = {
     imgExt: '.jpg',
 
     // methods
+
+    getSearchPath() {
+        return this.https + this.root + this.persons + this.search;
+    },
+
     getPersonsPath() {
         return this.https + this.root + this.persons + this.pages;
     },

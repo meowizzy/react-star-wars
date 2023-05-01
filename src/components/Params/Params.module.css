@@ -9,6 +9,10 @@
      margin-bottom: 10px;
 }
 
+.params.LIGHT_THEME {
+     color: var(--theme-light);
+}
+
 .params li:last-child {
      margin-bottom: 0;
 }

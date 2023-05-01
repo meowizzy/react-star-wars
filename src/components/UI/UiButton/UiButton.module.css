@@ -6,24 +6,27 @@
      transition: var(--transition);
 }
 
-
-.button:hover {
-     color: var(--theme-default);
-     border: 1px solid var(--theme-default);
-}
-
-
 .disabled {
      opacity: .7;
      pointer-events: none;
 }
 
-.dark {
+.button.DEFAULT_THEME {
      border: 1px solid var(--color-white);
      color: var(--color-white);
 }
 
-.light {
-     border: 1px solid var(--color-dark);
-     color: var(--color-dark);
+.button.DEFAULT_THEME:hover {
+     color: var(--theme-default);
+     border: 1px solid var(--theme-default);
+}
+
+.button.LIGHT_THEME {
+     border: 1px solid var(--theme-light);
+     color: var(--theme-light);
+}
+
+.button.LIGHT_THEME:hover {
+     background-color: var(--theme-light);
+     color: var(--color-white);
 }

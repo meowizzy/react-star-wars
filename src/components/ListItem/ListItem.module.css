@@ -3,6 +3,11 @@
      border-radius: var(--radius-small);
      overflow: hidden;
      position: relative;
+     transition: background-color var(--transition);
+}
+
+.personItem.LIGHT_THEME {
+     background-color: var(--theme-light-bg);
 }
 
 .personItem:hover img {
@@ -53,9 +58,12 @@
      transition: .6s ease;
 }
 
-
 .personItem__name {
      padding: 15px;
      font-size: 15px;
      color: var(--color-white);
+}
+
+.personItem.LIGHT_THEME .personItem__name {
+     color: var(--theme-light);
 }

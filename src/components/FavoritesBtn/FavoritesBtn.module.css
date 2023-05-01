@@ -1,0 +1,36 @@
+.FavoritesBtn {
+     font-size: 0;
+     width: 40px;
+     height: 40px;
+     border: 0;
+     outline: none;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' width='24' height='24'%3E%3Cpath fill='none' d='M18 20L12 15.2778L6 20V4.88889C6 4.38792 6.18061 3.90748 6.5021 3.55324C6.82359 3.19901 7.25963 3 7.71429 3H16.2857C16.7404 3 17.1764 3.19901 17.4979 3.55324C17.8194 3.90748 18 4.38792 18 4.88889V20Z' stroke='rgb(69,212,255)' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+     background-size: 30px;
+     background-position: center;
+     background-repeat: no-repeat;
+     cursor: pointer;
+     background-color: var(--color-black);
+     transition: var(--transition);
+     border-bottom-left-radius: var(--radius-large);
+     z-index: 2;
+}
+
+.active {
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' width='24' height='24'%3E%3Cpath fill='rgb(69, 212, 255)' d='M18 20L12 15.2778L6 20V4.88889C6 4.38792 6.18061 3.90748 6.5021 3.55324C6.82359 3.19901 7.25963 3 7.71429 3H16.2857C16.7404 3 17.1764 3.19901 17.4979 3.55324C17.8194 3.90748 18 4.38792 18 4.88889V20Z' stroke='rgb(69, 212, 255)' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.FavoritesBtn.LIGHT_THEME {
+     background-color: var(--theme-light);
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' width='24' height='24'%3E%3Cpath fill='none' d='M18 20L12 15.2778L6 20V4.88889C6 4.38792 6.18061 3.90748 6.5021 3.55324C6.82359 3.19901 7.25963 3 7.71429 3H16.2857C16.7404 3 17.1764 3.19901 17.4979 3.55324C17.8194 3.90748 18 4.38792 18 4.88889V20Z' stroke='rgb(255,255,255)' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.FavoritesBtn.LIGHT_THEME.active {
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' width='24' height='24'%3E%3Cpath fill='rgb(255, 255, 255)' d='M18 20L12 15.2778L6 20V4.88889C6 4.38792 6.18061 3.90748 6.5021 3.55324C6.82359 3.19901 7.25963 3 7.71429 3H16.2857C16.7404 3 17.1764 3.19901 17.4979 3.55324C17.8194 3.90748 18 4.38792 18 4.88889V20Z' stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+.absolute {
+     position: absolute;
+     top: 0;
+     right: 0;
+}

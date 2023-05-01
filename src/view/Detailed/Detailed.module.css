@@ -3,12 +3,18 @@
 }
 
 .top {
-   border-radius: var(--radius-medium);
-   background-color: var(--color-dark);  
-   padding: 10px;
-   display: flex;
-   align-items: flex-start;
-   column-gap: 50px;
+     border-radius: var(--radius-medium);
+     background-color: var(--color-dark);  
+     padding: 10px;
+     display: flex;
+     align-items: flex-start;
+     column-gap: 50px;
+     transition: background-color var(--transition);
+}
+
+
+.top.LIGHT_THEME {
+     background-color: var(--theme-light-bg);
 }
 
 .left {
@@ -17,6 +23,7 @@
      display: flex;
      align-items: center;
      justify-self: center;
+     position: relative;
 }
 
 .left img {

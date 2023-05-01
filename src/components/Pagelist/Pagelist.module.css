@@ -25,3 +25,13 @@
 .container_item a:hover, .container_item :global(a.active)  {
      background-color: var(--theme-default);
 }
+
+.container.LIGHT_THEME .container_item a {
+     color: var(--theme-light);
+     border: 1px solid var(--theme-light);
+}
+
+.container.LIGHT_THEME .container_item a:hover, .container.LIGHT_THEME .container_item :global(a.active) {
+     color: var(--color-white);
+     background-color: var(--theme-light);
+}

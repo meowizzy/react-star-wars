@@ -3,3 +3,8 @@
      font-size: 25px;
      margin: 15px 0;
 }
+
+
+.heading.LIGHT_THEME {
+     color: var(--theme-light);
+}

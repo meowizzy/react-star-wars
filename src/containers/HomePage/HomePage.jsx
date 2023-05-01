@@ -1,9 +1,9 @@
-import PagePanel from '@components/PagePanel';
+import { Categories } from "@components/Categories";
 
 //import styles from './HomePage.module.css';
 
 export const HomePage = () => {
      return (
-          <PagePanel heading={"Home"} /> 
+          <Categories />
      );
 };

@@ -27,9 +27,17 @@
      margin: 0 10px 0 0;
 }
 
-
-.dark .menu_item a {
+.menu.DEFAULT_THEME .menu_item a {
      color: var(--color-white);
+}
+
+.menu.LIGHT_THEME .menu_item a {
+     color: var(--theme-light);
+}
+
+.menu.LIGHT_THEME .menu_item a:hover, .menu.LIGHT_THEME .menu_item :global(a.active)  {
+     color: var(--theme-light);
+     border: 1px solid var(--theme-light);
 }
 
 .dark .menu_item a:hover, .dark .menu_item :global(a.active) {
