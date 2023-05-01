@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-star-wars/static/css/main.e7550660.css",
-    "main.js": "/react-star-wars/static/js/main.795129c9.js",
+    "main.js": "/react-star-wars/static/js/main.52c96bc0.js",
     "static/media/characters.jpg": "/react-star-wars/static/media/characters.b457db73b7f7e13ce15e.jpg",
     "static/media/films.jpg": "/react-star-wars/static/media/films.b9baf6debd9c6e059afd.jpg",
     "static/media/species.jpg": "/react-star-wars/static/media/species.9060b075582edbd5d151.jpg",
     "index.html": "/react-star-wars/index.html",
     "main.e7550660.css.map": "/react-star-wars/static/css/main.e7550660.css.map",
-    "main.795129c9.js.map": "/react-star-wars/static/js/main.795129c9.js.map"
+    "main.52c96bc0.js.map": "/react-star-wars/static/js/main.52c96bc0.js.map"
   },
   "entrypoints": [
     "static/css/main.e7550660.css",
-    "static/js/main.795129c9.js"
+    "static/js/main.52c96bc0.js"
   ]
 }
