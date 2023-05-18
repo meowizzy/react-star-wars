@@ -2,10 +2,9 @@
 
 # Technologies:
 ✔️ react  
-✔️ redux   
-✔️ redux-thunk  
+✔️ redux, redux-thunk  
 ✔️ react context  
-✔️ react-router, react-router-dom  
+✔️ react-router  
 ✔️ css modules  
 ✔️ storybook  
 ✔️ react-app-rewired, react-app-rewire-alias  
