@@ -1,6 +1,6 @@
-# React Star-Wars
+## React Star-Wars
 
-# Technologies:
+## Technologies:
 ✔️ react  
 ✔️ redux, redux-thunk  
 ✔️ react context  
@@ -11,4 +11,4 @@
 ✔️ react-classnames  
 ✔️ prop-types  
 
-# Demo: https://meowizzy.github.io/react-star-wars/
+## Demo: https://meowizzy.github.io/react-star-wars/
